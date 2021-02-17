@@ -18,7 +18,8 @@ Data structures and algorithms on python.
 When I run the code, columns are collapsed, and only some of them are shown.
 You can prevent this situation by adding this to your code:
 
-1. pd.set_option('display.max_columns',200)
+1. `pd.set_option('display.max_columns',200)`
+2. 
 ```
 while True:
     display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
