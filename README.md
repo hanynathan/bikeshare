@@ -19,8 +19,9 @@ When I run the code, columns are collapsed, and only some of them are shown.
 You can prevent this situation by adding this to your code:
 
 1. `pd.set_option('display.max_columns',200)`
-2. 
+2. another method
 ```
+from tabulate import tabulate
 while True:
     display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
     if display_data.lower() != 'yes':
@@ -28,6 +29,3 @@ while True:
     print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
     i+=5
  ```
-    
-I use a new library here, tabulate. So to use this, please also import the module:  
-`from tabulate import tabulate`
